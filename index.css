@@ -2,3 +2,7 @@ h1,
 body {
   color: red;
 }
+
+p {
+  border: 1px solid black;
+}
