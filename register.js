@@ -1,1 +1,2 @@
-console.log("registration");
+console.log("register");
+console.log("register v2");
