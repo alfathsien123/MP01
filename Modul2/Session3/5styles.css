@@ -1,0 +1,29 @@
+div {
+  background-color: lightblue;
+}
+
+div:hover {
+  background-color: white;
+  color: green;
+}
+
+.btn-aku {
+  background-color: black;
+  color: white;
+}
+.btn-aku:hover {
+  background-color: grey;
+  color: black;
+}
+.btn-aku:active {
+  background-color: white;
+  color: red;
+}
+
+p::first-line {
+  color: red;
+}
+p::after {
+  content: "ini tag p";
+  color: green;
+}

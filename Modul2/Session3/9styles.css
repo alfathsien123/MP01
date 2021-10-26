@@ -1,0 +1,29 @@
+div {
+  background-color: lightblue;
+  /* padding: 8px jarak semua
+  padding: 8px 16 atas bawah 8px kiri kanan 16px
+  padding: 8px 16px 4px;  jarak antara content dan border atas 8px kiri kanan 16px bawah 4px*/
+  padding: 8px 16px 4px 2px; /* atas 8px kanan 16px bawah 4px kiri 2px*/
+  /* padding-left: 10px;
+  padding-bottom: 20px; */
+  border: 2px solid red;
+  /* border: 2px dotted red;
+  border: 2px dashed red;
+  border-left: 2px solid red;
+  border-right: 6px dotted red; */
+}
+
+.black {
+  background-color: black;
+  color: blue;
+}
+.red {
+  background-color: red;
+  color: white;
+  margin: 15px;
+}
+.pink {
+  background-color: lightpink;
+  color: red;
+  margin: 15px;
+}

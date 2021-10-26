@@ -1,0 +1,15 @@
+p {
+  font-family: "Times New Roman", Times, Arial, Helvetica, Arial, serif;
+  font-style: italic; /* normal, oblique*/
+  font-weight: 900;
+}
+
+.blue {
+  color: #0000ff;
+}
+.blue-rgba {
+  color: rgb(87, 58, 255, 0.5); /* digit terakhir ocupacy/transparancy*/
+}
+.blue-hsl {
+  color: hsl(241, 70%, 46%);
+}

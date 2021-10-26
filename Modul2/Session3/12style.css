@@ -1,0 +1,31 @@
+.bg-car {
+  background-image: url("Capture.PNG");
+  background-size: contain;
+  /*auto : mode normal
+      contain : berusaha untuk fit image di dalam kontainer
+      cover : fit lebar browser/div */
+  height: 352px; /*size 770x352 => 352/770*heigth */
+  background-repeat: space;
+  /*no-repeat : 
+      round : membulatkan jumlah image agar fit di web (image akan diresize automatis)
+      space : membulatkan jumlah image dengan size asli */
+  background-attachment: fixed;
+  /* fixed : background akan ikut saat kita scroll
+      scrol : image mengikuti content saat scroll di web saja
+      local : image mengikuti content saat scroll di div dan website
+      */
+}
+
+.scroll {
+  background-image: url("Capture.PNG");
+  background-size: cover;
+  height: 352px;
+  background-attachment: scroll;
+}
+
+.local {
+  background-image: url("Capture.PNG");
+  background-size: cover;
+  height: 352px;
+  background-attachment: local;
+}

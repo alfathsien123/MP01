@@ -1,0 +1,16 @@
+div {
+  background-color: black;
+  color: red;
+}
+
+#div3 {
+  background-color: lightgreen;
+  color: white;
+}
+
+.class-1 {
+  background-color: lightcoral;
+}
+.font-1 {
+  color: white;
+}
