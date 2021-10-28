@@ -1,5 +1,19 @@
 .flex-container {
   display: flex;
+  flex-direction: row;
+  /*row
+  row-reverse
+  column
+  column-reverse
+  */
+  justify-content: flex-start;
+  /*Center : semua box (flex item) terletak di tengah
+    Space-between : ada jarak antara box (flex item)
+    Space-around : ada jarak antar box dan border
+    flex-start
+    flex-end
+  */
+  background-color: black;
 }
 
 .box {
