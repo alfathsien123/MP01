@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../bootstrap-4.6.1-dist/css/bootstrap.css"
+    />
+    <title>Table and Form</title>
+  </head>
+  <body class="p-3">
+    <!-- <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Name</th>
+        <th>Job</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sample</td>
+        <td>Sample</td>
+        <td>Sample</td>
+      </tr>
+      <tr>
+        <td>Sample</td>
+        <td>Sample</td>
+        <td>Sample</td>
+      </tr>
+      <tr>
+        <td>Sample</td>
+        <td>Sample</td>
+        <td>Sample</td>
+      </tr>
+    </tbody>
+  </table> -->
+
+    <!-------------------------------------------------->
+
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          placeholder="Type here"
+          type="text"
+          class="form-control"
+          id="email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input
+          placeholder="Type here"
+          type="text"
+          class="form-control"
+          id="username"
+        />
+      </div>
+    </form>
+
+    <!---------------------------------------------------->
+
+    <label for="prepend-testing">Berat Badan</label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Kilogram</span>
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Type here"
+        id="prepend-testing"
+      />
+    </div>
+
+    <!---------------------------------------------------->
+
+    <label for="append-testing">Berat Badan</label>
+    <div class="input-group">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Type here"
+        id="append-testing"
+      />
+      <div class="input-group-append">
+        <span class="input-group-text">Kilogram</span>
+      </div>
+    </div>
+
+    <!---------------------------------------------------->
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../bootstrap-4.6.1-dist/css/bootstrap.css"
+    />
+    <title>Flexbox</title>
+    <style>
+      .box {
+        height: 300px;
+        width: 300px;
+        background-color: lightblue;
+        border: 1px solid black;
+      }
+
+      .box-container {
+        height: 700px;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="
+        box-container
+        d-flex
+        flex-row
+        justify-content-around
+        align-items-end
+        flex-wrap
+      "
+    >
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
