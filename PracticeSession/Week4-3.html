@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      @media screen and (max-width: 768px) {
+        body {
+          background-color: lightblue;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        body {
+          background-color: blue;
+        }
+      }
+
+      .container {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        border: 1px solid black;
+      }
+
+      .button {
+        width: 350px;
+        height: 150px;
+        padding-top: 60px;
+        padding-left: 20px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+
+      .box-1,
+      .center,
+      .bottom,
+      .top-right,
+      .bottom-right,
+      .reset {
+        background-color: #3498db;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+      }
+
+      .box-1 {
+        top: 25px;
+        left: 25px;
+        transform: translate(-50%, -50%);
+      }
+      .center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .bottom {
+        bottom: 0px;
+      }
+
+      .bottom-right {
+        bottom: 0px;
+        right: 0px;
+      }
+
+      .top-right {
+        top: 0px;
+        right: 0px;
+      }
+
+      .reset {
+        top: 0px;
+        left: 0px;
+      }
+    </style>
+    <script>
+      function center() {
+        return document.getElementById("box").setAttribute("class", "center");
+      }
+      function bottom() {
+        return document.getElementById("box").setAttribute("class", "bottom");
+      }
+      function topRight() {
+        return document
+          .getElementById("box")
+          .setAttribute("class", "top-right");
+      }
+      function bottomRight() {
+        return document
+          .getElementById("box")
+          .setAttribute("class", "bottom-right");
+      }
+      function reset() {
+        return document.getElementById("box").setAttribute("class", "reset");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-1" id="box"></div>
+    </div>
+    <div class="button">
+      <button onclick="center()">Center</button>
+      <button onclick="bottom()">Bottom</button>
+      <button onclick="topRight()">Top-right</button>
+      <button onclick="bottomRight()">Bottom-right</button>
+      <button onclick="reset()">Reset</button>
+    </div>
+  </body>
+</html>

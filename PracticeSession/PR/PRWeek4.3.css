@@ -1,0 +1,172 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  height: 100vh;
+}
+.navbar,
+.right,
+.contents {
+  display: flex;
+}
+.header,
+.menu,
+.hero,
+.main,
+.image,
+.extra,
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #535c68;
+}
+.navbar,
+.hero,
+.contents,
+.banner {
+  width: 100%;
+}
+.header,
+.menu,
+.main,
+.right {
+  height: 100%;
+}
+.navbar {
+  height: 10%;
+}
+.hero {
+  background-color: #95afc0;
+  height: 40%;
+}
+.contents {
+  height: 35%;
+}
+.banner {
+  background-color: #f6e58d;
+  height: 15%;
+}
+
+/* SECTION : NAVBAR */
+.header {
+  flex: 2;
+  background-color: #30336b;
+}
+.menu {
+  background-color: #eb4d4b;
+  flex: 5;
+}
+
+/* SECTION : CONTENTS */
+.main {
+  background-color: #30336b;
+  flex: 1;
+}
+.right {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.image {
+  background-color: #6ab04c;
+  flex: 1;
+  width: 50%;
+}
+.extra {
+  background-color: #c7ecee;
+  flex: 1;
+  width: 50%;
+}
+
+/* CSS FOR iPad/Tablet */
+@media screen and (max-width: 768px) and (min-width: 478px) {
+  .navbar {
+    position: relative;
+    flex-direction: column;
+  }
+  .hero {
+    position: absolute;
+    top: 5%;
+  }
+  .contents {
+    position: relative;
+  }
+  .main,
+  .banner {
+    left: 20%;
+    width: 80%;
+  }
+  .main {
+    position: absolute;
+    top: 100%;
+    height: 70%;
+  }
+  .banner {
+    position: absolute;
+    top: 69.5%;
+  }
+  .menu {
+    position: absolute;
+    top: 375%;
+    height: 626%;
+    width: 20%;
+  }
+
+  .header {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+  }
+  .extra,
+  .image {
+    position: absolute;
+    top: 213%;
+    height: 44.5%;
+  }
+  .extra {
+    right: 30%;
+  }
+  .image {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 477px) and (min-width: 0px) {
+  .navbar {
+    position: relative;
+    flex-direction: column;
+  }
+  .hero {
+    height: 20%;
+  }
+  .main,
+  .extra,
+  .image {
+    position: absolute;
+    width: 100%;
+  }
+
+  .banner,
+  .extra,
+  .image {
+    position: absolute;
+    height: 15%;
+  }
+
+  .main {
+    height: 25%;
+  }
+  .banner {
+    bottom: 30%;
+  }
+  .extra {
+    top: 70%;
+  }
+  .image {
+    top: 85%;
+  }
+}

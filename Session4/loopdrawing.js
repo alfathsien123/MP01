@@ -2,7 +2,7 @@
 // var star = ''
 // for (i = 1; i <= 5; i++)
 // {
-//     star += ' * ' 
+//     star += ' * '
 // }
 
 // console.log(star);
@@ -50,11 +50,10 @@
 
 // Membuat segitiga siku-siku
 
-var stars = ''
-var rows = 5
+var stars = "";
+var rows = 5;
 
-for (i = 1; i <= rows; i++)
-{
-    stars += ' * '
-    console.log(stars);
-} 
+for (i = 1; i <= rows; i++) {
+  stars += " * ";
+  console.log(stars);
+}
