@@ -1,0 +1,35 @@
+{
+    "users" : [
+        {
+            "id" : 1,
+            "UID" : 123456, 
+            "email" : "admin@shiba.com",
+            "username" : "admin",
+            "password" : "shiba",
+            "role" : 1
+        }
+    ], 
+    "products" : [
+        {
+            "id" : 1,
+            "name" : "Pocket Crew Tees Sage",
+            "material" : "Cotton",
+            "weight" : 0.25,
+            "description" : "Washing Instuction : Machine wash normal, iron with medium temperature, do not bleach.",
+            "images" : []
+        }
+    ],
+    "stocks" : [
+        {
+            "id" : 1,
+            "sizes" : {
+                "s" : 1,
+                "m" : 2,
+                "l" :3
+            }     
+        }
+    ],
+    "landing" : [
+
+    ]
+}

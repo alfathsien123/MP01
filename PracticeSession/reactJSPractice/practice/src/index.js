@@ -2,6 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "../../../../todo-list/node_modules/bootstrap/dist/css/bootstrap.css";
 import App from "./app";
+// import Clock from "./time";
+// import FormattedDate from "./time";
+
+////////////////////////////////////////////////////////////////////////////
+
 /*
 // element : bagian terkecil dari komponen
 const title = <h1>Hello React</h1>;
@@ -75,6 +80,9 @@ class Main extends React.Component {
 */
 
 // menampilkan komponen di /public/index.html
+
+////////////////////////////////////////////////////////////////////////////
+
 ReactDOM.render(
   // <div>
   //   {/* element */}
@@ -86,7 +94,10 @@ ReactDOM.render(
   //   <Footer />
   //   <Main />
   // </div>
+
   <App />,
+  // <Clock />,
+  // <FormattedDate date={this.state.date} />,
 
   document.getElementById("root")
 );

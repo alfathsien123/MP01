@@ -1,0 +1,5 @@
+.articles {
+  /* background-color: aqua; */
+  display: flex;
+  flex-wrap: wrap;
+}

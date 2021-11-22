@@ -1,0 +1,28 @@
+body {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 10%;
+}
+.container {
+  background-color: #dfe4ea;
+  padding: 1% 15%;
+  width: 300px;
+}
+
+.title {
+  text-align: center;
+}
+
+.container > input {
+  padding: 5px 10px;
+}
+.container > button {
+  padding: 5px 10px;
+}
+
+.task-done {
+  text-decoration: line-through;
+}
