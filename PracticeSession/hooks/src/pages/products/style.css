@@ -1,0 +1,12 @@
+.product-container {
+  padding: 120px 5%;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+#product-card {
+  width: 23%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}

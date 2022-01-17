@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios'
 import { useDispatch } from 'react-redux'
-import { useNavigate, Navigate } from 'react-router-dom'
+import { useNavigate, Navigate, Link } from 'react-router-dom'
 import { Form, Button, Alert, Spinner } from 'react-bootstrap'
 import './style.css'
 
-const BASE_URL = 'http://localhost:2000'
+const API_URL = process.env.REACT_APP_API_URL
 
 function Login (props) {
     // state
@@ -23,11 +23,10 @@ function Login (props) {
     const onButtonLogin = () => {
         // check username & password in our database
         setLoading(true)
-        Axios.get(BASE_URL + `/users?username=${username}&password=${password}`)
+        Axios.get(API_URL + `/users?username=${username}&password=${password}`)
         .then(respond => {
             console.log(respond)
-            
-            
+
             // if error -> show error
             if (!respond.data.length) {
                 setError(true)
@@ -71,7 +70,7 @@ function Login (props) {
 
     return (
         <div className="login-container">
-            <div className="form-container">
+            <div className="login-form">
                 <h1>Sign In</h1>
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -93,10 +92,10 @@ function Login (props) {
                             onChange={ e => setPassWord(e.target.value)}
                         />
                     </Form.Group>
-
                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
                         <Form.Check type="checkbox" label="Remember Me" />
                     </Form.Group>
+                    <h3 className="register-now">Don't have an account ? <Link to="/register">Register Now</Link></h3>
                     { error ? <Alert variant="danger">Error : username or password doesn't match</Alert> : null }
                     <Button variant="primary" onClick={onButtonLogin} disabled={loading}>
                         { loading ? <Spinner animation="border" variant="light" /> : 'Login'}
