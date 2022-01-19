@@ -40,13 +40,14 @@
       "role": 2,
       "id": 5
     },
+
     {
-      "UID": 1637848929722,
-      "username": "",
-      "email": "",
-      "password": "",
+      "UID": 1642598656924,
+      "username": "test123",
+      "email": "test123@gmail.com",
+      "password": "@Test123",
       "role": 2,
-      "id": 6
+      "id": 7
     }
   ],
   "products": [

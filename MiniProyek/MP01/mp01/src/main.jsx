@@ -14,7 +14,8 @@ import Register from "./pages/register";
 // import Products from "./pages/products";
 // import ProductDetails from "./pages/product-details";
 
-const API_URL = process.env.REACT_APP_API_URL;
+// const API_URL = process.env.REACT_APP_API_URL;
+const API_URL = "http://localhost:2000";
 
 function HomeProducts() {
   return <Outlet />;
@@ -27,7 +28,7 @@ function Main() {
   // keep-login
   useEffect(() => {
     const token = localStorage.getItem("token");
-    Axios.get(`http://localhost:2000/users?UID=${token}`) // API_URL + `/users?UID=${token}`
+    Axios.get(API_URL + `/users?UID=${token}`) //
       .then((respond) => {
         console.log(respond);
         dispatch({ type: "LOGIN", payload: respond.data[0] });

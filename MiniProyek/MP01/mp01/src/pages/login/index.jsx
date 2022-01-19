@@ -6,6 +6,7 @@ import { Form, Button, Alert, Spinner } from "react-bootstrap";
 import "./style.css";
 
 const API_URL = process.env.REACT_APP_API_URL;
+// const API_URL = "http://localhost:2000";
 
 function Login(props) {
   // state
@@ -23,10 +24,7 @@ function Login(props) {
   const onButtonLogin = () => {
     // check username & password in our database
     setLoading(true);
-    Axios.get(
-      "http://localhost:2000" +
-        `/users?username=${username}&password=${password}`
-    )
+    Axios.get(API_URL + `/users?username=${username}&password=${password}`)
       .then((respond) => {
         console.log(respond);
 
